@@ -11,10 +11,10 @@ import {FaPager} from 'react-icons/fa'
 const LeftContent = () => {
     return (
         <>
-          <ul class="menu overflow-y-auto bg-gray-50 lg:bg-transparent mt-16 lg:mt-0">
+          <ul className="menu overflow-y-auto bg-gray-50 lg:bg-transparent mt-16 lg:mt-0">
               {/* <!-- Sidebar content here --> */}
               <li><a className='hover:bg-gray-100'>
-                    <img src="https://placeimg.com/80/80/people" class="w-8 rounded-full"/>
+                    <img src="https://placeimg.com/80/80/people" className="w-8 rounded-full"/>
                     <span>Hasan Rafi</span>
                   </a>
               </li>
