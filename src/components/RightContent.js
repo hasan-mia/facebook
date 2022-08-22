@@ -8,7 +8,7 @@ import {HiOutlineUserGroup} from 'react-icons/hi';
 import {ImUsers} from 'react-icons/im';
 import {FaPager} from 'react-icons/fa'
 
-const LeftContent = () => {
+const RightContent = () => {
     return (
         <div className='left-sidebar'>
           <ul className="menu overflow-y-auto bg-gray-50 lg:bg-transparent mt-16 lg:mt-0">
@@ -78,4 +78,4 @@ const LeftContent = () => {
     );
 };
 
-export default LeftContent;
+export default RightContent;

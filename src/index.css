@@ -11,8 +11,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Story */
 .story-create{
   height: 23vh!important
+}
+.slick-next, .slick-prev {
+  border: 2px solid #c9c2c2;
+  border-radius: 50%;
+  padding: 5px;
+  width: 3vw;
+  height: 6vh;
+  background: #fff;
+  z-index: 1;
+}
+.slick-next:hover, .slick-prev:hover {
+  background: #fff;
+;
+}
+.slick-next {
+  right: -20px;
+}
+
+.slick-prev{
+  left: -20px;
+}
+/* =====Left sidebar scroll=== */
+/* .left-sidebar, .right-sidebar {
+  height: 110vh;
+  overflow: scroll;
+  scroll-behavior: auto;
+} */
+
+.navbar > li:hover {
+  border-bottom: 4px solid #3b5998 ;
+  border-radius: 0;
+  position: relative;
+  color: #3b5998 ;
+  padding-bottom: 2px;
 }
 /* ========Media Query======= */
 @media(max-width:767px){

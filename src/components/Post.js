@@ -6,7 +6,7 @@ import domingo from '../assets/domingo.jpg'
 const Post = () => {
     return (
         <div className='py-2 my-4 bg-white border rounded-xl'>
-            <h2 className='border-b pb-1 px-2'>Suggested for you</h2>
+            <h2 className='border-b pb-2 px-2'>Suggested for you</h2>
             <div className="flex flex-col flex-start gap-2">
                
                 <div className='flex justify-between items-center gap-1 px-2 py-2 w-full mb-2'>
