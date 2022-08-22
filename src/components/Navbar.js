@@ -21,25 +21,29 @@ const Navbar = () => {
 
               <div className="navbar-start flex-1 gap-2">
                 <BsFacebook className='text-3xl lg:text-4xl text-blue-600'/>
-                <BsSearch className='text-3xl lg:text-4xl bg-gray-200 rounded-full p-2 active:text-blue-600'/>
+                <div className='bg-main py-2 px-4 relative rounded sm-none'>
+                    <input type="text" placeholder="Search Profile" className="p-2 border bg-gray-200 border-gray-200 rounded-3xl w-full px-2 lg:px-8" />
+                    <p><BsSearch className='text-color z-10 text-xl absolute top-5 mx-2'/></p>
+                </div>
+                <BsSearch className='text-3xl lg:text-4xl bg-gray-200 rounded-full p-2 active:text-blue-600 lg:hidden'/>
                 <label for="my-drawer" className='lg:hidden'>
                   <AiOutlineMenu className='text-3xl cursor-pointer'/>
                 </label>
               </div>
               
-              <div className="navbar-center w-2/12">
+              <div className="navbar-center w-2/12 sm-none">
                 <ul className="menu menu-horizontal gap-1 lg:gap-8">
-                  <li><a className='hover:bg-transparent'><VscHome className='text-xl lg:text-3xl active:text-blue-600'/></a></li>
-                  <li><a className='hover:bg-transparent'><MdOndemandVideo className='text-xl lg:text-3xl active:text-blue-600'/></a></li>
-                  <li><a className='hover:bg-transparent'><HiOutlineUserGroup className='text-xl lg:text-3xl active:text-blue-600 border border-gray-300 rounded-full p-1'/></a></li>
-                  <li><a className='hover:bg-transparent'><SiFacebookgaming className='text-xl lg:text-3xl text-gray-400 active:text-blue-600'/></a></li>
+                  <li className='text-md lg:text-3xl active:text-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><VscHome/></a></li>
+                  <li className='text-md lg:text-3xl active:text-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><MdOndemandVideo/></a></li>
+                  <li className='text-md lg:text-3xl active:text-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><HiOutlineUserGroup className='rounded-full border p-1'/></a></li>
+                  <li className='text-md lg:text-3xl text-gray-200 active:text-blue-600 hover:bg-gray-200 hover:text-gray-500 rounded-lg'><a className='hover:bg-transparent'><SiFacebookgaming /></a></li>
                 </ul>
               </div>
               <div className="navbar-end">
-                <div className="dropdown dropdown-end">
-                    <label tabindex="0" className="btn btn-ghost btn-circle avatar">
-                      <div>
-                      <CgMenuGridR className='text-md lg:text-4xl bg-gray-200 rounded-full p-2 active:text-blue-600'/>
+                <div className="dropdown dropdown-end px-2">
+                    <label tabindex="0" className="rounded-full">
+                      <div className='text-md lg:text-2xl cursor-pointer bg-gray-200 rounded-full p-2 active:text-blue-600'>
+                      <CgMenuGridR/>
                       </div>
                     </label>
                     <ul tabindex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
@@ -53,14 +57,14 @@ const Navbar = () => {
                       <li><a>Logout</a></li>
                     </ul>
                 </div>
-                  <ul className="menu menu-horizontal p-0">
-                    <li><a className='hover:bg-transparent'><BsMessenger className='text-md lg:text-4xl bg-gray-200 rounded-full p-2 active:text-blue-600'/></a></li>
-                    <li><a className='hover:bg-transparent'><IoMdNotifications className='text-md lg:text-4xl bg-gray-200 p-2 active:text-blue-600 border border-gray-300 rounded-full p-1'/></a></li>
-                    <li><a className='hover:bg-transparent'>
+                  <ul className="flex justify-center items-center gap-2">
+                    <li className='text-md lg:text-2xl p-2 bg-gray-200 rounded-full active:text-blue-600 cursor-pointer'><a ><BsMessenger/></a></li>
+                    <li className='text-md lg:text-2xl p-2 bg-gray-200 rounded-full active:text-blue-600 cursor-pointer'><a ><IoMdNotifications /></a></li>
+                    <li><a className='hover:bg-transparent cursor-pointer'>
                       <img src="https://placeimg.com/80/80/people" className="w-10 rounded-full"/>
                     </a></li>
                   </ul>
-                </div>
+              </div>
             </div>
             {/* =========Main Body Content======= */}
             <main>

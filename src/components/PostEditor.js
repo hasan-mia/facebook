@@ -7,9 +7,9 @@ const PostEditor = () => {
     return (
         <div className='py-2 bg-white border rounded-xl'>
             <div className="flex flex-col justify-start gap-2">
-                <div className='flex items-center gap-1 hover:bg-gray-100 px-2 py-2 w-full border-b mb-2 mx-2'>
+                <div className='flex items-center gap-1 hover:bg-gray-100 px-2 py-2 w-full mb-2'>
                     <a href='#'>
-                        <img src="https://placeimg.com/80/80/people" className="w-8 rounded-full"/>
+                        <img src="https://placeimg.com/80/80/people" className="w-10 h-10 rounded-full"/>
                     </a>
                     <div className="flex w-full px-2">
                         <input type="text" placeholder="What's your mind Md.Hasan?" className="py-4 input bg-gray-100 input-bordered w-full" />

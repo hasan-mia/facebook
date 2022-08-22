@@ -11,10 +11,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.story-create{
+  height: 23vh!important
+}
 /* ========Media Query======= */
 @media(max-width:767px){
   .sm-none{
     display: none;
+  }
+  .story-create{
+    height: 46vh!important
   }
 }
