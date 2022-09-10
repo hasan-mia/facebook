@@ -2,6 +2,7 @@ import React from 'react';
 import { BsThreeDots } from 'react-icons/bs';
 import {BiWorld} from 'react-icons/bi';
 import {FiThumbsUp} from 'react-icons/fi';
+import {FaThumbsUp, FaHeart} from 'react-icons/fa';
 import {RiShareForwardLine} from 'react-icons/ri';
 import {GoComment} from 'react-icons/go';
 import userImag from '../../src/assets/userImg.png';
@@ -58,9 +59,10 @@ const Post = () => {
 
                         {/* Show Like/Comment */}
                         <div className="flex justify-between">
-                            <nav className='flex items-center gap-x-2 text-md text-gray-600 list-none'>
-                                <li>Like</li>
-                                <li>Love</li>
+                            <nav className='flex items-center text-sm text-gray-600 list-none'>
+                                <span className='bg-blue-700 text-white p-1 rounded-full'><FaThumbsUp/></span>
+                                <span className='bg-red-700 text-white p-1 rounded-full'><FaHeart/></span>
+                                <span className='pl-1 text-lg'>1.5k Johns and 5 othes</span>
                             </nav>
                             <div className="flex items-center gap-x-2 text-md text-gray-600">
                                 <p>12k Comments</p>
