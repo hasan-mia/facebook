@@ -70,7 +70,7 @@ const Navbar = () => {
               </div>
             </div>
             {/* =========Main Body Content======= */}
-            <main>
+            <main className='main'>
               <Home></Home>
             </main>
           </div> 

@@ -58,3 +58,17 @@ body {
     height: 46vh!important
   }
 }
+
+/* ========Media Query======= */
+@media(min-width:768px){
+  .left-sidebar, .right-sidebar, .navbar{
+    position: fixed;
+  }
+  .navbar{
+    z-index: 2;
+  }
+  .main{
+    margin-top: 5rem;
+  }
+  
+}

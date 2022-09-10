@@ -7,7 +7,7 @@ import Story from '../components/Story';
 
 const Home = () => {
     return (
-       <main className='bg-gray-100'>
+       <div className='bg-gray-100'>
             <div className='flex flex-col lg:flex-row gap-2'>
                 <div className='w-12/12 lg:w-3/12 sm-none'>
                     <LeftContent></LeftContent>
@@ -21,7 +21,7 @@ const Home = () => {
                     <RightContent></RightContent>
                 </div>
             </div>
-       </main>
+       </div>
     );
 };
 
