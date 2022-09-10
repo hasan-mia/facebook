@@ -75,7 +75,7 @@ const Navbar = () => {
             </main>
           </div> 
           {/* =======Left Sidebar Content====== */}
-          <div className="drawer-side">
+          <div className="drawer-side mt-16">
             <label for="my-drawer" className="drawer-overlay"></label> 
             <LeftContent></LeftContent>
           </div>
