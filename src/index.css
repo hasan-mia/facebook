@@ -50,6 +50,25 @@ body {
   color: #3b5998 ;
   padding-bottom: 2px;
 }
+
+/*Chatroom Scrollbar Design */
+ /* Scroll */
+ .right-sidebar::-webkit-scrollbar, .left-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.right-sidebar::-webkit-scrollbar-track, .left-sidebar::-webkit-scrollbar-track  {
+  border-radius: 10px;
+  height:5px;
+}
+/* Handle */
+.right-sidebar::-webkit-scrollbar-thumb, .left-sidebar::-webkit-scrollbar-thumb {
+  background: #dadada;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  height: 50px;
+}
 /* ========Media Query======= */
 @media(max-width:767px){
   .sm-none{
@@ -73,6 +92,7 @@ body {
   }
   .left-sidebar, .right-sidebar{
     width: 24%;
+    overflow-y: scroll;
   }
   
 }

@@ -11,7 +11,7 @@ import userImag from '../../src/assets/userImg.png';
 
 const LeftContent = () => {
     return (
-        <div className='left-sidebar'>
+        <div className='left-sidebar w-full max-h-screen'>
           <ul className="menu overflow-y-auto bg-gray-50 lg:bg-transparent">
               {/* <!-- Sidebar content here --> */}
               <li><a className='hover:bg-gray-100'>

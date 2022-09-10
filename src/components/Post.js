@@ -11,7 +11,7 @@ import domingo from '../assets/domingo.jpg';
 const Post = () => {
     return (
 
-            <div className="flex flex-col flex-start gap-2 bg-white pb-2 my-4 border rounded-lg">
+            <div className="flex flex-col flex-start gap-2 bg-white pb-2 mb-4 border rounded-lg">
                 <div className='flex justify-between items-start gap-1 px-2 py-2 w-full mb-2'>
                     {/* ==Profile== */}
                     <div className='flex justify-center gap-x-2'>
