@@ -1,6 +1,6 @@
 import React from 'react';
 import LeftContent from '../components/LeftContent';
-import Post from '../components/Post';
+import Posts from '../components/Posts';
 import PostEditor from '../components/PostEditor';
 import RightContent from '../components/RightContent';
 import Story from '../components/Story';
@@ -15,7 +15,7 @@ const Home = () => {
                 <div className='w-12/12 lg:w-6/12'>
                     <Story></Story>
                     <PostEditor></PostEditor>
-                    <Post></Post>
+                    <Posts></Posts>
                 </div>
                 <div className='w-12/12 lg:w-3/12'>
                     <RightContent></RightContent>

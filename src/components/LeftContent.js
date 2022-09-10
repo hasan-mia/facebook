@@ -6,7 +6,8 @@ import {MdOndemandVideo} from 'react-icons/md';
 import {SiFacebookgaming, SiFacebooklive} from 'react-icons/si';
 import {HiOutlineUserGroup} from 'react-icons/hi';
 import {ImUsers} from 'react-icons/im';
-import {FaPager} from 'react-icons/fa'
+import {FaPager} from 'react-icons/fa';
+import userImag from '../../src/assets/userImg.png';
 
 const LeftContent = () => {
     return (
@@ -14,8 +15,8 @@ const LeftContent = () => {
           <ul className="menu overflow-y-auto bg-gray-50 lg:bg-transparent mt-16 lg:mt-0">
               {/* <!-- Sidebar content here --> */}
               <li><a className='hover:bg-gray-100'>
-                    <img src="https://placeimg.com/80/80/people" className="w-8 rounded-full"/>
-                    <span>Hasan Rafi</span>
+                    <img src={userImag} className="w-8 rounded-full"/>
+                    <span>Emah John</span>
                   </a>
               </li>
               <li><a className='hover:bg-gray-100'>

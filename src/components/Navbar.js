@@ -1,14 +1,17 @@
 import React from 'react';
 import {BsFacebook, BsSearch, BsMessenger} from 'react-icons/bs';
 import {AiOutlineMenu} from 'react-icons/ai';
-import {VscHome} from 'react-icons/vsc'
-import {MdOndemandVideo} from 'react-icons/md'
+import {VscHome} from 'react-icons/vsc';
+import {FaUsers} from 'react-icons/fa'
+import {MdOndemandVideo} from 'react-icons/md';
 import {HiOutlineUserGroup} from 'react-icons/hi';
 import {SiFacebookgaming} from 'react-icons/si';
 import {CgMenuGridR} from 'react-icons/cg';
 import {IoMdNotifications} from 'react-icons/io';
 import Home from '../pages/Home';
 import LeftContent from './LeftContent';
+import userImag from '../../src/assets/userImg.png';
+
 
 const Navbar = () => {
     return (
@@ -33,10 +36,10 @@ const Navbar = () => {
               
               <div className="navbar-center w-2/12 sm-none">
                 <ul className="menu menu-horizontal gap-1 lg:gap-8">
-                  <li className='text-md lg:text-3xl active:text-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><VscHome/></a></li>
-                  <li className='text-md lg:text-3xl active:text-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><MdOndemandVideo/></a></li>
-                  <li className='text-md lg:text-3xl active:text-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><HiOutlineUserGroup className='rounded-full border p-1'/></a></li>
-                  <li className='text-md lg:text-3xl text-gray-200 active:text-blue-600 hover:bg-gray-200 hover:text-gray-500 rounded-lg'><a className='hover:bg-transparent'><SiFacebookgaming /></a></li>
+                  <li className='text-md lg:text-3xl active:bg-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><VscHome/></a></li>
+                  <li className='text-md lg:text-3xl active:bg-blue-600 hover:bg-gray-200 rounded-lg'><a className='hover:bg-transparent'><MdOndemandVideo/></a></li>
+                  <li className='text-md lg:text-3xl active:bg-blue-600 hover:bg-gray-200 text-gray-500'><a className='hover:bg-transparent'><FaUsers className='border border-gray-400 p-1 rounded-full'/></a></li>
+                  <li className='text-md lg:text-3xl active:bg-blue-600 hover:bg-gray-200 rounded-lg p-1 text-gray-50'><a className='hover:bg-transparent'><SiFacebookgaming className='bg-gray-400 border border-gray-400' /></a></li>
                 </ul>
               </div>
               <div className="navbar-end">
@@ -61,7 +64,7 @@ const Navbar = () => {
                     <li className='text-md lg:text-2xl p-2 bg-gray-200 rounded-full active:text-blue-600 cursor-pointer'><a ><BsMessenger/></a></li>
                     <li className='text-md lg:text-2xl p-2 bg-gray-200 rounded-full active:text-blue-600 cursor-pointer'><a ><IoMdNotifications /></a></li>
                     <li><a className='hover:bg-transparent cursor-pointer'>
-                      <img src="https://placeimg.com/80/80/people" className="w-10 rounded-full"/>
+                      <img src={userImag} className="w-10 rounded-full"/>
                     </a></li>
                   </ul>
               </div>
