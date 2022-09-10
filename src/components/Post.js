@@ -115,7 +115,7 @@ const Post = () => {
                                     {/* ==Profile== */}
                                     <ul className='flex justify-center gap-x-2'>
                                         <a href='#'>
-                                            <img src={userImag} className="w-7 h-7 rounded-full"/>
+                                            <img src={userImag} className="w-10 h-7 rounded-full"/>
                                         </a>
                                         <li className='flex flex-col'>
                                             <div className='flex flex-col bg-gray-100 py-2 px-4 rounded-3xl'>
@@ -131,7 +131,7 @@ const Post = () => {
                                             <li className='flex justify-between items-start gap-1 w-full'>
                                                 <ul className='flex justify-center gap-x-2'>
                                                     <a href='#'>
-                                                        <img src={userImag} className="w-7 h-7 rounded-full"/>
+                                                        <img src={userImag} className="w-10 h-7 rounded-full"/>
                                                     </a>
                                                     <li className='flex flex-col'>
                                                         <div className='flex flex-col bg-gray-100 py-2 px-4 rounded-3xl'>
@@ -147,6 +147,7 @@ const Post = () => {
                                             </li>
                                             
                                         </li>
+                                        
                                     </ul>
                                 </li>
                                   
