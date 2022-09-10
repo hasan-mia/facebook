@@ -6,7 +6,7 @@ import ActiveUser from './ActiveUser';
 
 const RightContent = () => {
     return (
-        <div className='right-sidebar'>
+        <div className='right-sidebar w-full'>
           <ul className="menu overflow-y-auto bg-gray-50 lg:bg-transparent mt-16 lg:mt-0">
               {/* <!-- Sidebar content here --> */}
               {/*======== Pages and Groups=========*/}

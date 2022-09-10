@@ -18,14 +18,15 @@ body {
 .slick-next, .slick-prev {
   border: 2px solid #c9c2c2;
   border-radius: 50%;
-  padding: 5px;
-  width: 3vw;
-  height: 6vh;
+  padding: 8px;
+  width: 2rem;
+  height: 2rem;
   background: #fff;
   z-index: 1;
 }
+
 .slick-next:hover, .slick-prev:hover {
-  background: #fff;
+  background: #ffffffef;
 ;
 }
 .slick-next {
@@ -69,6 +70,9 @@ body {
   }
   .main{
     margin-top: 5rem;
+  }
+  .left-sidebar, .right-sidebar{
+    width: 24%;
   }
   
 }
